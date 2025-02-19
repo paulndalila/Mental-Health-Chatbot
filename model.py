@@ -37,3 +37,7 @@ def detect_depression(sentence):
     except Exception as e:
         print(f"Error: {e}")
         return f"Error: {e}"
+
+sample_text = "She comes crying to me and formulates a plan to break up. She talks to Joe about their issues and her will to leave him wilts. She stays with him. Rinse and repeat, except it gets worse over time. How can I break the cycle, or help her break the cycle?"
+result = detect_depression(sample_text)
+print(f"Prediction: {result}")
